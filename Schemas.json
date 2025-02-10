@@ -13,7 +13,10 @@
             "phone": "",
             "email": "",
             "password": "",
-            "bio": ""
+            "bio": "",
+            "dob": "",
+            "gender": "",
+            "school": ""
         },
         "notebook": {
             "subject": "",

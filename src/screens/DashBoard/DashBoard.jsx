@@ -4,6 +4,7 @@ import './style.css'
 import MyNavbar from '../../components/MyNavbar/MyNavbar'
 import { Link } from 'react-router-dom';
 import image from '../../assets/profile.jpg'
+import StudentActivity from '../../components/StudentActivity/StudentActivity';
 
 const DashBoard = () => {
   const [show, setShow] = useState(false);
@@ -77,15 +78,50 @@ const DashBoard = () => {
     class: '8',
     bio: 'A passionate computer science student...',
     imageUrl: 'https://via.placeholder.com/250',
+    dob: "5-4-2004",
+    gender: "male",
+    school: "SSVP Vadodara",
     noteCount: "10"
   };
 
+  const studentActivities = [
+    {
+      type: 'Assignment Submitted',
+      description: 'Math Assignment 2',
+      timestamp: '2024-10-27T10:30:00Z',
+    },
+    {
+      type: 'Quiz Taken',
+      description: 'Science Quiz 1',
+      timestamp: '2024-10-26T14:45:00Z',
+    },
+    {
+      type: 'Discussion Forum',
+      description: 'Replied to thread on cell biology',
+      timestamp: '2024-10-25T09:12:00Z',
+    },
+    {
+      type: 'Assignment Submitted',
+      description: 'History Essay',
+      timestamp: '2024-10-27T16:20:00Z',
+    },
+    {
+      type: 'Quiz Taken',
+      description: 'Science Quiz 1',
+      timestamp: '2024-10-26T14:45:00Z',
+    },
+    {
+      type: 'Discussion Forum',
+      description: 'Replied to thread on cell biology',
+      timestamp: '2024-10-25T09:12:00Z',
+    },
+  ];
 
   return (
-    <div className='vh-100'>
+    <div className='h-100'>
       <MyNavbar />
-
-      <div className='fixed w-100 p-1 sticky'>
+      {/* Sidebar */}
+      <div className='w-100 p-1 sticky z-1'>
         <button className="btn btn-sm sidebar-btn" onClick={handleShow}>
           <i className="bi bi-list me-2 fs-5"></i><span>Collections</span>
         </button>
@@ -127,10 +163,10 @@ const DashBoard = () => {
         </Offcanvas>
       </div>
 
-      <div className='w-100 mt-5 fixed container dashboard-layout'>
-        <h1>Hello User</h1>
-        <div>
-          <Card className="mb-3">
+      {/* Dashboard profile */}
+      <div className='w-100 mt-5 container dashboard-layout'>
+        <div className='pt-3'>
+          <Card className="mb-3 p-3">
             <Row className="g-0">
               <Col md={4} className="d-flex justify-content-center align-items-center">
                 <Image
@@ -143,22 +179,20 @@ const DashBoard = () => {
               <Col md={8}>
                 <Card.Body>
                   <Card.Title>{studentData.name}</Card.Title>
-                  <Card.Text>
-                    <div className='sdata-div'>
-                      <div className='mb-2'>
-                        <strong>Email:</strong> {studentData.email}
-                      </div>
-                      <div className='mb-2'>
-                        <strong>Class:</strong> {studentData.class}
-                      </div>
-                      <div className='mb-2'>
-                        <strong>Bio:</strong> {studentData.bio}
-                      </div>
-                      <div className='mb-2'>
-                        <strong>Notes:</strong> {studentData.noteCount}
-                      </div>
+                  <div className='sdata-div'>
+                    <div className='mb-2'>
+                      <strong>Email:</strong> {studentData.email}
                     </div>
-                  </Card.Text>
+                    <div className='mb-2'>
+                      <strong>Class:</strong> {studentData.class}
+                    </div>
+                    <div className='mb-2'>
+                      <strong>Bio:</strong> {studentData.bio}
+                    </div>
+                    <div className='mb-2'>
+                      <strong>Notes:</strong> {studentData.noteCount}
+                    </div>
+                  </div>
                 </Card.Body>
               </Col>
             </Row>
@@ -167,6 +201,8 @@ const DashBoard = () => {
         </div>
       </div>
 
+      {/* recent activity */}
+      <StudentActivity activities={studentActivities} />
     </div>
   )
 }
