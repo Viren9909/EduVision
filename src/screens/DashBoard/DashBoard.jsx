@@ -77,7 +77,7 @@ const DashBoard = () => {
     class: '8',
     bio: 'A passionate computer science student...',
     imageUrl: 'https://via.placeholder.com/250',
-    noteCount:"10"
+    noteCount: "10"
   };
 
 
