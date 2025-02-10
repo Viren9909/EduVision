@@ -1,0 +1,43 @@
+[
+    {
+        "collection": {
+            "student_id": "",
+            "name": "",
+            "note_books": [
+                "ids"
+            ]
+        },
+        "student": {
+            "name": "",
+            "class": "",
+            "phone": "",
+            "email": "",
+            "password": "",
+            "bio": ""
+        },
+        "notebook": {
+            "subject": "",
+            "creater": "",
+            "isPublic": "",
+            "tag": "",
+            "pages": [
+                {
+                    "page_no": "",
+                    "content": "",
+                    "topic_name": "",
+                    "last_updated_date": "",
+                    "images": ""
+                }
+            ]
+        },
+        "groups": {
+            "name": "",
+            "members": [],
+            "admins": [],
+            "group_code": "",
+            "description": "",
+            "creared_date": "",
+            "notebook": []
+        }
+    }
+]

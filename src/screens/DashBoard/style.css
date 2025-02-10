@@ -1,0 +1,84 @@
+.sticky{
+    position: fixed;
+    background-color: #2196F3;
+}
+
+.create-coll{
+    border: 1px solid #2196F3;
+    color: #2196F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.create-coll:hover{
+    border: 1px solid #FFC107;
+    color: #FFC107;
+}
+
+.new-note-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2196F3;
+    border: 1px solid #2196F3;
+}
+
+.new-note-btn:hover{
+    border: 1px solid #FFC107;
+    color: #FFC107;
+}
+
+.accordian-main{
+    color: #2196F3;
+}
+
+.coll-card{
+    border: 1px solid #2196F3;
+}
+.coll-card:hover{
+    border: 1px solid #FFC107;
+}
+
+.sidebar-btn{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar-btn:hover{
+    border: 1px solid white;
+    color: white;
+}
+
+.note-btn{
+    border: 1px solid #2196F3;
+    color: #2196F3;
+}
+.note-btn:hover{
+    background-color: #2196F3;
+    color: white;
+}
+
+.dashboard-layout{
+    background-color: #FAFAFA;
+    height: fit-content;
+}
+
+.p-btn{
+    background-color: #2196F3;
+    color: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+.p-btn:hover{
+    background-color: #FFC107;
+    color: #000000;
+}
+
+.sdata-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

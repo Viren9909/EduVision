@@ -1,0 +1,23 @@
+.landing-page{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-btn{
+    background-color: #2196F3;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-btn:hover{
+    background-color: #FFC107;
+}
+
+.landing-login-btn{
+    padding: 50px;
+}

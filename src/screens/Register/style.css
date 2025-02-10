@@ -1,0 +1,41 @@
+.signup-btn{
+    background-color: #2196F3;
+    color: white;
+}
+
+.signup-btn:hover{
+    background-color: #FFC107;
+}
+
+.input-field{
+    border-radius: 5px;
+    border: 1px solid #2196F3;
+    border-left: none;
+}
+
+.input-field:focus{
+    outline: none;
+}
+
+.form-div{
+    border-radius: 5px;
+}
+
+.icon{
+    border: 1px solid #2196F3;
+    color: #2196F3;
+}
+
+.sign-up-heading{
+    width: fit-content;
+    position: relative;
+}
+.sign-up-heading::after{
+    content: "";
+    position: absolute;
+    background-color: #2196F3;
+    height: 10%;
+    width: 100%;
+    bottom: -10%;
+    left: 0;
+}

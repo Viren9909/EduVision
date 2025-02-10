@@ -1,0 +1,18 @@
+
+.nav-btn{
+    background-color: #2196F3;
+    color: white;
+}
+
+.nav-btn:hover{
+    background-color: #FFC107;
+}
+
+.nav-item{
+    border-bottom:2px solid #ffffff;
+}
+
+.nav-item:hover{
+    @apply active;
+    border-bottom:2px solid #2196F3;
+}

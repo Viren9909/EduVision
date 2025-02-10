@@ -1,0 +1,5 @@
+Primary: #2196F3, rgb(33 150 243) (Blue)
+Secondary: #FFC107, rgb(255 193 7) (Amber/Gold)
+Accent: #4CAF50 (Green)
+Background: #FFFFFF  #FAFAFA (White)
+Text: #333333 (Dark Gray)
